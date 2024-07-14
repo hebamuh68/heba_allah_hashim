@@ -1,0 +1,102 @@
+/* Importing Lexend font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+/* Root variables */
+:root {
+    --Gradient: linear-gradient(101deg, #FFBB64 0%, #A367B1 100.01%);
+}
+
+/* Body styles */
+body {
+    font-family: 'Lexend'; 
+    background: var(--Gradient);
+    margin: 0;
+}
+
+
+/* Navbar ==============================================================================*/
+
+
+.navbar-custom {
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: transparent; 
+    box-shadow: none;
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar-custom.scrolled {
+    background: var(--Gradient); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-custom .navbar-brand {
+    font-family: 'Lexend', sans-serif; 
+    font-weight: bold;
+    color: #ffffff !important; 
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff !important; 
+    font-family: 'Lexend', sans-serif; 
+}
+
+/* Bio ==============================================================================*/
+
+.custom-jumbotron {
+    background-color: rgba(248, 249, 250, 0.85);
+    backdrop-filter: blur(10px);
+}
+
+.jumbotron {
+    background: none !important;
+    color: #ffffff !important;
+}
+
+/* Work experiences ==============================================================================*/
+.container{
+    font-family: 'Lexend'; 
+
+}
+
+#work-experiences {
+    background-color: #fcf4eb00;
+    padding: 60px 0;
+}
+
+.work-card {
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    height: 100%; /* Ensure the card takes full height of its container */
+    margin-bottom: 20px; /* Adjust vertical spacing between cards */
+}
+
+.work-card h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.work-card .card-text {
+    color: #6c757d;
+    flex-direction: 1; 
+}
+
+.work-card .card-text p {
+    line-height: 1.5;
+}
+
+
+
+
+/* Projects ============================================================================== */
+#projects {
+    padding: 60px 0;
+}
+
